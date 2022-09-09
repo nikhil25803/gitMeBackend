@@ -21,6 +21,7 @@
   "homepage": "https://github.com/nikhil25803/gitMeBackend#readme",
   "dependencies": {
     "axios": "^0.27.2",
+    "dotenv": "^16.0.2",
     "express": "^4.18.1",
     "mongoose": "^6.6.0",
     "node-fetch": "^2.6.7",
