@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Backend for the project GitMe :  A GitHub repository recommendation system.",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js"
@@ -19,8 +20,10 @@
   },
   "homepage": "https://github.com/nikhil25803/gitMeBackend#readme",
   "dependencies": {
+    "axios": "^0.27.2",
     "express": "^4.18.1",
     "mongoose": "^6.6.0",
+    "node-fetch": "^2.6.7",
     "nodemon": "^2.0.19"
   }
 }

@@ -6,11 +6,13 @@ const mongoose = require('mongoose')
 const app = express()
 
 // Routers
-const awsRoute = require('./routes/awsRoute');
+const recommendation = require('./routes/recommendationsRoute');
+const profile = require('./routes/userDataRoute')
 
 
 // Middlewares
-app.use('/', awsRoute);
+app.use('/', recommendation);
+app.use('/', profile)
 
 
 app.listen(8080, ()=> {
