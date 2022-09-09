@@ -1,0 +1,26 @@
+{
+  "name": "gitmebackend",
+  "version": "1.0.0",
+  "description": "Backend for the project GitMe :  A GitHub repository recommendation system.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikhil25803/gitMeBackend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikhil25803/gitMeBackend/issues"
+  },
+  "homepage": "https://github.com/nikhil25803/gitMeBackend#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.6.0",
+    "nodemon": "^2.0.19"
+  }
+}
