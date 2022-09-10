@@ -12,11 +12,16 @@ exports.profileData = (req, res, next) => {
         }
     }
 
-    axios
-        .get(`https://api.github.com/users/${userName}`, config)
-        .then(result => {
-            const data = result
-            res.send(data['data'])
-        })
-        .catch(err => console.log(err))
+    try {
+        axios
+            .get(`https://api.github.com/users/${userName}`, config)
+            .then(result => {
+                const data = result
+                res.send(data['data'])
+            })
+            .catch(err => console.log(err))
+    } catch {
+        console.log("Error : Limit Reached")
+    }
+
 }
