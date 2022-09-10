@@ -14,6 +14,7 @@ def repo_details(repoList):
     stars_count = []
     fork_count = []
     issue_count = []
+    languages_used = []
 
     count = 0
     for i in range(len(repoList)):
@@ -63,16 +64,25 @@ def repo_details(repoList):
         except:
             issue_count.append(0)
 
+        # Fetching the most used language
+        try:
+            lang = soup.find(class_="color-fg-default text-bold mr-1")
+            lang_value = lang.string
+            languages_used.append(lang_value)
+        except:
+            languages_used.append('NULL')
+
         count += 1
         print(f"Data of the repo {repoList[i]} have been fetched")
         print(f"------  Count = {count}  ------\n")
 
     return (pullRequests_list, contributors_list, stars_count, fork_count,
-            issue_count, len(pullRequests_list), len(contributors_list),
-            len(starCount), len(fork_count), len(issue_count))
+            issue_count, languages_used, len(
+                pullRequests_list), len(contributors_list),
+            len(starCount), len(fork_count), len(issue_count), len(languages_used))
 
 
-# test_users = ['nikhil25803/LearnCPP', 'coding-geek21/classDeck']
+# test_users = ['nikhil25803/LearnCPP', 'nikhil25803/fundRaiser']
 result = repo_details(file)
 print(result)
 
@@ -90,3 +100,6 @@ with open('forks.json', 'w') as fp:
 
 with open('issues.json', 'w') as fp:
     json.dump(result[4], fp)
+
+with open('languages.json', 'w') as fp:
+    json.dump(result[5], fp)

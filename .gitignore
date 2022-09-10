@@ -1,2 +1,4 @@
 /node_modules
 .env
+pythonScripts/dataFrame.ipynb
+pythonScripts/notebook.ipynb
