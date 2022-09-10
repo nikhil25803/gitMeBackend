@@ -2,3 +2,4 @@
 .env
 pythonScripts/dataFrame.ipynb
 pythonScripts/notebook.ipynb
+pythonScripts/recommendations.ipynb
