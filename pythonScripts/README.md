@@ -1,0 +1,1 @@
+#### This directory contains the Python scripts used to fetch data from GitHub using Scrappers and GitHub APIs
