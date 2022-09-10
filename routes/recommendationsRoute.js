@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
 const recommendationRoute = require('../controllers/recommendationControllers');
-const userData = require('../controllers/userDataController')
+const userData = require('../controllers/profilesController')
 
-router.get('/repoRecommendation', recommendationRoute.getRecommendations)
+router.get('/recommendation', recommendationRoute.getRecommendations)
 
 
 

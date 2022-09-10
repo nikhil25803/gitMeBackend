@@ -1,7 +1,7 @@
 
 const express = require('express')
 const router = express.Router()
-const profile = require('../controllers/userDataController')
+const profile = require('../controllers/profilesController')
 
 router.get('/profileData', profile.profileData)
 

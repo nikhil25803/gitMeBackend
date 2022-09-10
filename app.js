@@ -7,7 +7,7 @@ const app = express()
 
 // Routers
 const recommendation = require('./routes/recommendationsRoute');
-const profile = require('./routes/userDataRoute')
+const profile = require('./routes/profilesRoute')
 
 
 // Middlewares
