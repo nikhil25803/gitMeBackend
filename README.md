@@ -1,5 +1,5 @@
 
-# Backend of the project GitMe 
+# Backend of the project [GitMe](https://github.com/Kingshuk3006/Gitme) 
 ## A GitHub repository recommendation system.
 
 ---
@@ -7,16 +7,16 @@
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
 
 ### About
-This repository is the backend of the project [GitMe](https://github.com/Kingshuk3006/Gitme), which is GitHub repository recommendation system based on the concept of content based filtering.
+This repository is the backend of the project [GitMe](https://github.com/Kingshuk3006/Gitme), which is a GitHub repository recommendation system based on the concept of content-based filtering.
 
 
-Collected *18,000+* repsoitories, filtered the repo which do have at least one open issue, and **Pandas** to create dataframe, sort it according to the language entered by the user and filter out them on different parameters like star count, issues open, pull requests and contributors.
+Collected *18,000+* repositories, filtered the repo which does have at least one open issue, and **Pandas** to create a data frame, sort it according to the language entered by the user and filter out them on different parameters like star count, issues open, pull requests and contributors.
 
 
-Deployed the script on **AWS Lambda**, add required python packages as a layer and triggered it using **API Gateway** by AWS.
+Deployed the script on **AWS Lambda**, add required python packages as a layer, and triggered it using **API Gateway** by AWS.
 
 
-Tested the deployed link usng Node and **ExpressJS**, passing different query parameters to get desired output.
+Tested the deployed link using Node and **ExpressJS**, passing different query parameters to get desired output.
 
 ---
 
@@ -26,7 +26,7 @@ Tested the deployed link usng Node and **ExpressJS**, passing different query pa
 
 
 
-The invoke URL accepts two query parameters , the first is `language=`, which ask you the language of which you wants to get the repositories of and the second is `sortby=` which sort the result accordingly.
+The invoke URL accepts two query parameters, the first is `language=`, which asks you the language of which you wants to get the repositories and the second is `sortby=` which sort the result accordingly.
 
 Example :
 
@@ -56,10 +56,12 @@ Output :
 ]
 ```
 
-This will return you the data of repositories with `Python` as the most language used and the output will be sorted by the `stars_count`
+This will return you the data of repositories with `Python` as the language used and the output will be sorted by the `stars_count`
 
 ---
 
 ### AWS Architecture 💫
 [![image](https://www.linkpicture.com/q/awslambda.png)](https://www.linkpicture.com/view.php?img=LPic631dbf4c0917a1884256241)
 
+
+---
