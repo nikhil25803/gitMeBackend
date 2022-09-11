@@ -1,19 +1,21 @@
-const axios = require('axios')
+const axios = require('axios');
+// const { data } = require('cheerio/lib/api/attributes');
 const url = require('url');
 
 
 exports.getRecommendations = (req, res, next) => {
     const urlData = url.parse(req.url, true).query
-    const a = parseInt(urlData['num1'])
-    const b = parseInt(urlData['num2'])
+    const a = urlData['language']
+    const b = urlData['sortby']
+    console.log(a)
+    console.log(b)
 
     axios
-        .get(`https://phdnuottbj.execute-api.us-west-2.amazonaws.com/v1/calculator?num1=${a}&num2=${b}`)
+        .get(`https://f1p3gk74yh.execute-api.us-west-2.amazonaws.com/recommend?language=${a}&sortby=${b}`)
         .then(result => {
-            const r = result['data']['ans']
-            res.send({
-                "Answer": r,
-            })
+
+            console.log(result.data)
+            res.json(result.data)
         })
         .catch(err => {
             console.log(err)
